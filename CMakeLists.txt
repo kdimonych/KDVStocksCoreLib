@@ -70,3 +70,9 @@ endif (CURL_FOUND)
 ENABLE_TESTING()
 ADD_SUBDIRECTORY( unit_tests )
 
+########################################################################
+# Export variables
+########################################################################
+SET( KDV_STOCKS_CORE_LIB_NAME ${LIB_TARGET_NAME} PARENT_SCOPE)
+SET( KDV_STOCKS_CORE_LIB_PUBLIC_INCLUDE_DIRS ${LIB_PUBLIC_HEADER_PATH} PARENT_SCOPE)
+
